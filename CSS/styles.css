@@ -35,7 +35,7 @@ body {
   color: hsl(235, 18%, 26%);
 }
 
-.signup_form > h1 {
+h1 {
   font-family: "Roboto-Bold";
   font-size: 55px;
   font-weight: 900;
@@ -43,7 +43,7 @@ body {
   color: hsl(234, 29%, 20%);
 }
 
-.signup_form > p {
+p {
   max-width: 90%;
 }
 
@@ -51,6 +51,7 @@ body {
   padding: 0px;
   text-align: left;
   margin: 20px 0px;
+  list-style-type: none;
 }
 
 .signup_form > ul > li {
@@ -103,9 +104,37 @@ button:hover {
 /* success-message */
 
 .success_message {
-  display: none;
+  background-color: hsl(0, 0%, 100%);
+  width: 22%;
+  margin: 5% auto;
+  border-radius: 30px;
+  padding: 2% 2% 2% 3%;
+  text-align: left;
+  color: hsl(235, 18%, 26%);
 }
 
-ul {
-  list-style-type: none;
+.success_message > img {
+  width: 50px;
+}
+
+.success_message > h1 {
+  line-height: 3.5rem;
+  margin-top: 4%;
+  font-size: 45px;
+}
+
+.success_message > p {
+  max-width: 87%;
+  font-size: 15px;
+}
+
+.success_message > button {
+  margin-top: 5px;
+  max-width: 90%;
+  font-size: 13px;
+}
+/* Hidden Class */
+
+.hidden {
+  display: none;
 }
