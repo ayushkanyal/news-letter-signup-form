@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Sign-up form start -->
-    <div class="signup_page">
+    <div class="signup_page" id="landing_page">
       <div class="signup_form">
         <h1>Stay updated!</h1>
 
@@ -39,12 +39,15 @@
 
     <!-- Success message start -->
 
-   <div class="success_message">
+   <div class="success_message hidden" id="thanks_message">
+    <img src="assets/images/icon-success.svg">
+    <h1>Thanks for subscribing!</h1>
     <p>
-      Thanks for subscribing! A confirmation email has been sent to
-      ash@loremcompany.com. Please open it and click the button inside to confirm
-      your subscription. Dismiss message
+       A confirmation email has been sent to
+      <span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm
+      your subscription. 
     </p>
+    <button id="dismiss_button" >Dismiss message</button>
    </div> 
     <!-- Success message end -->
 
