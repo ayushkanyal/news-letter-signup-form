@@ -67,6 +67,11 @@ p {
 }
 
 .label {
+  font-size: 12px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  max-width: 86%;
   font-family: "Roboto-bold";
 }
 
@@ -76,12 +81,25 @@ input {
   border-radius: 7.5px;
   border-width: 1px;
   border-style: solid;
-  border-color: grey;
 }
 
 input:hover {
   cursor: pointer;
 }
+
+/* Error state start */
+
+#error_label {
+  color: hsl(4, 100%, 67%);
+}
+
+.error_state {
+  color: hsl(4, 100%, 67%);
+  border-color: hsl(4, 100%, 67%);
+  background-color: #ffe8e6;
+}
+
+/* Error state end */
 
 button {
   background-color: hsl(234, 29%, 20%);
