@@ -36,7 +36,10 @@
         <input id="email_address" placeholder="email@company.com"></input>
         <button id="subscribe_button">Subscribe to monthly newsletter</button>
       </div>
-      <img class="signup_image" src="assets/images/illustration-sign-up-desktop.svg">
+      <picture>
+        <source media="(max-width: 376px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="fallback">
+      </picture>
     </div>
     <!-- Sign-up form end -->
 
