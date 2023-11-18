@@ -18,6 +18,8 @@ function subscribed() {
 function reset() {
   signup_form.classList.remove("hidden");
   success_message.classList.add("hidden");
+  error_label.classList.add("hidden");
+  email.classList.remove("error_state");
 }
 
 subscribeButton.addEventListener("click", subscribed);
