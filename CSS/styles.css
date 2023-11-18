@@ -61,11 +61,6 @@ p {
   margin: 10px 0px;
 }
 
-.signup_image {
-  object-fit: cover;
-  height: 75vh;
-}
-
 .label {
   font-size: 12px;
   display: flex;
