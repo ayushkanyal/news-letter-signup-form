@@ -4,9 +4,11 @@ let signup_form = document.getElementById("landing_page");
 let success_message = document.getElementById("thanks_message");
 let dismissButton = document.getElementById("dismiss_button");
 let error_label = document.getElementById("error_label");
+let input_email = document.getElementById("input_email");
 
 function subscribed() {
   if (email.value.includes("@")) {
+    input_email.innerHTML = email.value;
     signup_form.classList.add("hidden");
     success_message.classList.remove("hidden");
   } else {
@@ -20,6 +22,7 @@ function reset() {
   success_message.classList.add("hidden");
   error_label.classList.add("hidden");
   email.classList.remove("error_state");
+  email.value= "";
 }
 
 subscribeButton.addEventListener("click", subscribed);
