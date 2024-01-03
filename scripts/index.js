@@ -6,6 +6,7 @@ let dismissButton = document.getElementById("dismiss_button");
 let error_label = document.getElementById("error_label");
 let input_email = document.getElementById("input_email");
 
+
 function subscribed() {
   if (email.value.includes("@")) {
     input_email.innerHTML = email.value;
